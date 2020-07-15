@@ -1,4 +1,4 @@
-const Evi = artifacts.require('Evi')
+const Wib = artifacts.require('Wib')
 
 /*
   This script makes it easy to read the data variable
@@ -6,7 +6,7 @@ const Evi = artifacts.require('Evi')
 */
 
 module.exports = async callback => {
-  const mc = await Evi.deployed()
+  const mc = await Wib.deployed()
   const data = await mc.data.call()
   callback(data)
 }
